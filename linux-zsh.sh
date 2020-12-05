@@ -4,9 +4,10 @@ mkdir /home/nick/Documents/git
 sleep 2
 mkdir /home/nick/Documnets/git/dotfiles
 sleep 2
-cd /home/nick/Documents/git/dotfiles
+mkdir /home/nick/Documents/git/dotfiles/linux-dotfiles
+sleep 2
 echo "Clone Linux-Dotfiles from Github"
-git clone https://github.com/crowsnesttech/linux-dotfiles.git
+git clone https://github.com/crowsnesttech/linux-dotfiles.git /home/nick/Documents/git/dotfiles/linux-dotfiles/
 
 echo "removing old files"
 rm /home/nick/.oh-my-zsh
