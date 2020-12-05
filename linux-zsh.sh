@@ -1,8 +1,10 @@
 #!/bin/bash
 
 mkdir /home/nick/Documents/git
+sleep 2
 mkdir /home/nick/Documnets/git/dotfiles
-cd /home/nick/Documents/git/dotfiles/
+sleep 2
+cd /home/nick/Documents/git/dotfiles
 echo "Clone Linux-Dotfiles from Github"
 git clone https://github.com/crowsnesttech/linux-dotfiles.git
 
