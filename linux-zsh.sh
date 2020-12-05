@@ -1,24 +1,32 @@
 #!/bin/bash
 
 mkdir -p /home/nick/Documents/git/dotfiles/linux-dotfiles
+sleep 1
 
-sleep 2
-
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Clone Linux-Dotfiles from Github"
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+
 git clone https://github.com/crowsnesttech/linux-dotfiles.git /home/nick/Documents/git/dotfiles/linux-dotfiles/
 
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "removing old files"
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+sleep 1
+
 rm /home/nick/.oh-my-zsh
 rm /home/nick/.vimrc
 rm /home/nick/.zshrc
+
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "creating symlinks"
-sleep 2
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+sleep 1
 
 ln -s /home/nick/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh ~/
 ln -s /home/nick/Documents/git/dotfiles/linux-dotfiles/.vimrc ~/
 ln -s /home/nick/Documents/git/dotfiles/linux-dotfiles/.zshrc ~/
-
-sleep 2
+sleep 1
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
