@@ -14,9 +14,9 @@ rm /home/nick/.zshrc
 echo "creating symlinks"
 sleep 2
 
-ln -s /home/nick/Documents/git/linux-dotfiles/.oh-my-zsh ~/
-ln -s /home/nick/Documents/git/linux-dotfiles/.vimrc ~/
-ln -s /home/nick/Documents/git/linux-dotfiles/.zshrc ~/
+ln -s /home/nick/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh ~/
+ln -s /home/nick/Documents/git/dotfiles/linux-dotfiles/.vimrc ~/
+ln -s /home/nick/Documents/git/dotfiles/linux-dotfiles/.zshrc ~/
 
 sleep 2
 
