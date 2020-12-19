@@ -3,6 +3,8 @@
 sudo apt update
 sudo apt install zsh -y 
 
+sudo apt install oh-my-zsh -y
+
 mkdir -p /home/nick/Documents/git/dotfiles/linux-dotfiles
 sleep 1
 
