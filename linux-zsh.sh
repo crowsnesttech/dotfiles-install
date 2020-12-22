@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt install zsh -y 
 
-#sudo apt install oh-my-zsh -y
+
 
 mkdir -p /home/nick/Documents/git/dotfiles/linux-dotfiles
 sleep 1
@@ -36,4 +36,12 @@ sleep 1
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+sudo fc-cache -fv
+rm -r fonts
+
 chsh -s $(which zsh)
+
+#pop_os remember to change the font in the system preferences to DejaVu Sans Mono for Powerline Book
