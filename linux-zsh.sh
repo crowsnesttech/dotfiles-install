@@ -3,8 +3,6 @@
 sudo apt update
 sudo apt install zsh -y 
 
-
-
 mkdir -p /home/nick/Documents/git/dotfiles/linux-dotfiles
 sleep 1
 
@@ -40,8 +38,9 @@ git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
 sudo fc-cache -fv
-rm -r fonts
+cd ..
+sudo rm -r fonts
 
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 #pop_os remember to change the font in the system preferences to DejaVu Sans Mono for Powerline Book
