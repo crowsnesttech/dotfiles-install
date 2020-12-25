@@ -34,12 +34,12 @@ sleep 1
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-sudo fc-cache -fv
-cd ..
-sudo rm -r fonts
+# git clone https://github.com/powerline/fonts.git
+# cd fonts
+# ./install.sh
+# sudo fc-cache -fv
+# cd ..
+# sudo rm -r fonts
 
 sudo chsh -s $(which zsh)
 
