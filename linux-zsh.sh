@@ -34,6 +34,7 @@ sleep 1
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+##Uncomment for Desktop Veriants
 # git clone https://github.com/powerline/fonts.git
 # cd fonts
 # ./install.sh
@@ -41,6 +42,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # cd ..
 # sudo rm -r fonts
 
-sudo chsh -s $(which zsh)
+ chsh -s $(which zsh)
 
 #pop_os remember to change the font in the system preferences to DejaVu Sans Mono for Powerline Book
