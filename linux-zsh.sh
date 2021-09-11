@@ -44,4 +44,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
  chsh -s $(which zsh)
 echo "REMEMBER TO LOGOUT TO ENABLE SHELL"
-#pop_os remember to change the font in the system preferences to DejaVu Sans Mono for Powerline Book
+echo "pop_os remember to change the font in the system preferences to DejaVu Sans Mono for Powerline Book"
