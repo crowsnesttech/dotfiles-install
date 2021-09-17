@@ -12,6 +12,8 @@ echo "+++++++++++++++++++++++++++++++++++++++++++++"
 
 git clone https://github.com/crowsnesttech/linux-dotfiles.git /home/nick/Documents/git/dotfiles/linux-dotfiles/
 
+git clone https://github.com/ohmyzsh/ohmyzsh.git /home/nick/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh/
+
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "removing old files"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
