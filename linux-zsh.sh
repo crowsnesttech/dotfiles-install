@@ -3,38 +3,38 @@
 sudo apt update
 sudo apt install zsh -y 
 
-mkdir -p /home/$USER/Documents/git/dotfiles/linux-dotfiles
+mkdir -p $HOME/Documents/git/dotfiles/linux-dotfiles
 sleep 1
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Clone Linux-Dotfiles from Github"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 
-rm -rf /home/$USER/Documents/git/dotfiles/linux-dotfiles/
+rm -rf $HOME/Documents/git/dotfiles/linux-dotfiles/
 
-git clone https://github.com/crowsnesttech/linux-dotfiles.git /home/$USER/Documents/git/dotfiles/linux-dotfiles/
+git clone https://github.com/crowsnesttech/linux-dotfiles.git $HOME/Documents/git/dotfiles/linux-dotfiles/
 
-git clone https://github.com/ohmyzsh/ohmyzsh.git /home/$USER/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh/
+git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "removing old files"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 sleep 1
 
-rm /home/$USER/.oh-my-zsh
-rm /home/$USER/.vimrc
-rm /home/$USER/.zshrc
-rm /home/$USER/.tmux.conf
+rm $HOME/.oh-my-zsh
+rm $HOME/.vimrc
+rm $HOME/.zshrc
+rm $HOME/.tmux.conf
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "creating symlinks"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 sleep 1
 
-ln -s /home/$USER/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh ~/
-ln -s /home/$USER/Documents/git/dotfiles/linux-dotfiles/.vimrc ~/
-ln -s /home/$USER/Documents/git/dotfiles/linux-dotfiles/.zshrc ~/
-ln -s /home/$USER/Documents/git/dotfiles/linux-dotfiles/.tmux.conf ~/
+ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh ~/
+ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.vimrc ~/
+ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.zshrc ~/
+ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.tmux.conf ~/
 sleep 1
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
