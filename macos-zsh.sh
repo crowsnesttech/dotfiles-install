@@ -36,6 +36,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 cp $HOME/git/dotfiles/macos-dotfiles/agnostercstm.zsh-theme $HOME/git/dotfiles/macos-dotfiles/.oh-my-zsh/custom/themes/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
+echo "Installing Hack Nerd Fonts"
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+
+
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Installing iTerm2 Shell Integration"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh| bash
