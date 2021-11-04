@@ -3,24 +3,18 @@
 sudo apt update
 sudo apt install zsh -y 
 
-mkdir -p $HOME/Documents/git/dotfiles/linux-dotfiles
-sleep 1
+rm -rf $HOME/git/dotfiles/linux-dotfiles/
+mkdir -p $HOME/git/dotfiles/linux-dotfiles
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Clone Linux-Dotfiles from Github"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-
-rm -rf $HOME/Documents/git/dotfiles/linux-dotfiles/
-
-git clone https://github.com/crowsnesttech/linux-dotfiles.git $HOME/Documents/git/dotfiles/linux-dotfiles/
-
-git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh/
+git clone https://github.com/crowsnesttech/linux-dotfiles.git $HOME/git/dotfiles/linux-dotfiles/
+git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "removing old files"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-sleep 1
-
 rm $HOME/.oh-my-zsh
 rm $HOME/.vimrc
 rm $HOME/.zshrc
@@ -29,17 +23,17 @@ rm $HOME/.tmux.conf
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "creating symlinks"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-sleep 1
+ln -s $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh ~/
+ln -s $HOME/git/dotfiles/linux-dotfiles/.vimrc ~/
+ln -s $HOME/git/dotfiles/linux-dotfiles/.zshrc ~/
+ln -s $HOME/git/dotfiles/linux-dotfiles/.tmux.conf ~/
 
-ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.oh-my-zsh ~/
-ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.vimrc ~/
-ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.zshrc ~/
-ln -s $HOME/Documents/git/dotfiles/linux-dotfiles/.tmux.conf ~/
-sleep 1
-
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+echo "Adding ZSH Plugins"
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
+cp $HOME/git/dotfiles/linux-dotfiles/agnostercstm.zsh-theme $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/custom/themes/
 ##Uncomment for Desktop Veriants
 # git clone https://github.com/powerline/fonts.git
 # cd fonts
