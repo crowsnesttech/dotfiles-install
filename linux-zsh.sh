@@ -34,6 +34,14 @@ echo "+++++++++++++++++++++++++++++++++++++++++++++"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 cp $HOME/git/dotfiles/linux-dotfiles/agnostercstm.zsh-theme $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/custom/themes/
+
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+echo "Installing Hack Nerd Fonts"
+echo "+++++++++++++++++++++++++++++++++++++++++++++"
+cd ~/git/dotfiles/install-dotfiles/nerd-fonts
+sudo ./install.sh Hack
+
+
 ##Uncomment for Desktop Veriants
 # git clone https://github.com/powerline/fonts.git
 # cd fonts
