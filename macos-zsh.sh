@@ -48,6 +48,8 @@ else
     brew install iterm2
 fi
 
+cp -i $HOME/install-dotfiles/iterm2-prefs/com.googlecode.iterm2.plst /Users/nick/Library/Preferences/com.googlecode.iterm2.plist
+
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Installing iTerm2 Shell Integration"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
