@@ -41,6 +41,12 @@ echo "+++++++++++++++++++++++++++++++++++++++++++++"
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 
+ITERM=/Applications/iterm.app
+if [ -e "$ITERM" ]; then
+    echo "$ITERM exists."
+else 
+    brew install iterm2
+fi
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Installing iTerm2 Shell Integration"
