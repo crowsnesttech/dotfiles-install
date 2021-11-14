@@ -9,8 +9,8 @@ mkdir -p $HOME/git/dotfiles/linux-dotfiles
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Clone Linux-Dotfiles from Github"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-git clone https://github.com/crowsnesttech/linux-dotfiles.git $HOME/git/dotfiles/linux-dotfiles/
-git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/
+git clone git@github.com:crowsnesttech/linux-dotfiles.git $HOME/git/dotfiles/linux-dotfiles/
+git clone git@github.com:ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "removing old files"
