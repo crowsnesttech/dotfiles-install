@@ -33,7 +33,7 @@ echo "+++++++++++++++++++++++++++++++++++++++++++++"
 mv ~/bash_profile ~/.bash_profile
 mv ~/nanorc ~/.nanorc
 mv ~/oh-my-zsh ~/.oh-my-zsh
-mv ~/vimrc ~/.vmrc
+mv ~/vimrc ~/.vimrc
 mv ~/zshrc ~/.zshrc
 
 
