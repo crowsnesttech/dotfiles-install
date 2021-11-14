@@ -6,8 +6,8 @@ mkdir -p $HOME/git/dotfiles/macos-dotfiles
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Clone MacOS-Dotfiles from Github"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-git clone https://github.com/crowsnesttech/macos-dotfiles.git $HOME/git/dotfiles/macos-dotfiles/
-git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/macos-dotfiles/oh-my-zsh/
+git clone git@github.com:crowsnesttech/macos-dotfiles.git $HOME/git/dotfiles/macos-dotfiles/
+git clone git@github.com:ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/macos-dotfiles/oh-my-zsh/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Removing Old Files"
