@@ -35,23 +35,23 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 cp $HOME/git/dotfiles/linux-dotfiles/agnostercstm.zsh-theme $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/custom/themes/
 
-echo "+++++++++++++++++++++++++++++++++++++++++++++"
-echo "Installing Hack Nerd Fonts"
-echo "+++++++++++++++++++++++++++++++++++++++++++++"
-cd $HOME/install-dotfiles/nerd-fonts
-sudo /usr/bash install.sh Hack
+# echo "+++++++++++++++++++++++++++++++++++++++++++++"
+# echo "Installing Hack Nerd Fonts"
+# echo "+++++++++++++++++++++++++++++++++++++++++++++"
+# cd $HOME/install-dotfiles/nerd-fonts
+# ./install.sh Hack
 
 
-##Uncomment for Desktop Veriants
-# git clone https://github.com/powerline/fonts.git
-# cd fonts
-# ./install.sh
-# sudo fc-cache -fv
-# cd ..
-# sudo rm -r fonts
+# ##Uncomment for Desktop Veriants
+# # git clone https://github.com/powerline/fonts.git
+# # cd fonts
+# # ./install.sh
+# # sudo fc-cache -fv
+# # cd ..
+# # sudo rm -r fonts
 
-chsh -s $(which zsh)
-echo "=========================================="
-echo "REMEMBER TO LOGOUT OF COMPUTER TO ENABLE SHELL"
-echo "POP_OS --> remember to change the font in the terminal app to DejaVu Sans Mono for Powerline Book"
-echo "=========================================="
+# chsh -s $(which zsh)
+# echo "=========================================="
+# echo "REMEMBER TO LOGOUT OF COMPUTER TO ENABLE SHELL"
+# echo "POP_OS --> remember to change the font in the terminal app to DejaVu Sans Mono for Powerline Book"
+# echo "=========================================="
