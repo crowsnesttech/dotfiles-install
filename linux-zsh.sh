@@ -1,16 +1,16 @@
 #!/bin/bash
 
-sudo apt update
-sudo apt install zsh -y 
+# sudo apt update
+# sudo apt install zsh -y 
 
 rm -rf $HOME/git/dotfiles/linux-dotfiles/
-mkdir -p $HOME/git/dotfiles/linux-dotfiles
+mkdir -p $HOME/git/dotfiles/linux-dotfiles/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Clone Linux-Dotfiles from Github"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-git clone git@github.com:crowsnesttech/linux-dotfiles.git $HOME/git/dotfiles/linux-dotfiles/
-git clone git@github.com:ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/
+git clone https://github.com/crowsnesttech/linux-dotfiles.git $HOME/git/dotfiles/linux-dotfiles/
+git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/git/dotfiles/linux-dotfiles/.oh-my-zsh/
 
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "removing old files"
