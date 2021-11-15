@@ -38,8 +38,8 @@ cp $HOME/git/dotfiles/linux-dotfiles/agnostercstm.zsh-theme $HOME/git/dotfiles/l
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
 echo "Installing Hack Nerd Fonts"
 echo "+++++++++++++++++++++++++++++++++++++++++++++"
-cd ~/git/dotfiles/install-dotfiles/nerd-fonts
-sudo ./install.sh Hack
+cd $HOME/install-dotfiles/nerd-fonts
+sudo /usr/bash install.sh Hack
 
 
 ##Uncomment for Desktop Veriants
@@ -50,7 +50,7 @@ sudo ./install.sh Hack
 # cd ..
 # sudo rm -r fonts
 
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 echo "=========================================="
 echo "REMEMBER TO LOGOUT OF COMPUTER TO ENABLE SHELL"
 echo "POP_OS --> remember to change the font in the terminal app to DejaVu Sans Mono for Powerline Book"
